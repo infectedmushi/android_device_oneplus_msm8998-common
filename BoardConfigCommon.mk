@@ -77,7 +77,8 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/oneplus/msm8998
 TARGET_KERNEL_CONFIG := lineage_oneplus5_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/gcc-arm-8.3-2019.03-x86_64-aarch64-linux-gnu/bin
+KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-gnu-
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
